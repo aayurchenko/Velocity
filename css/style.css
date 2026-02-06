@@ -1,0 +1,509 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+
+.hide {
+    display: none !important;
+}
+/* Общие стили */
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.container {
+    max-width: 970px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+p {
+    color: #6A859C;    
+    line-height: 179%;
+    text-align: center;
+}
+
+
+
+.title-wrapper {
+    margin-bottom: 60px;
+}
+
+.title {
+    font-size: 30px;
+    line-height: 120%;
+    letter-spacing: 0.17em;
+    text-transform: uppercase;
+    color: #676770;
+    margin-bottom: 17px;
+}
+
+.subtitle {
+    font-size: 17px;
+    line-height: 118%;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #8e8e9c;
+}
+
+.common-section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.common-section--dark {
+    background-color: #192024;
+}
+
+.common-section--dark * {
+    color: #fff;
+}
+.common-section--dark .subtitle {
+    color: #e8e8e8;
+}
+
+
+
+/* ____HEADER___ */
+.header {
+    padding: 20px 0;
+    position: fixed; 
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+}
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 25px;
+    line-height: 100%;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #69b9ff;
+}
+.header__nav {
+}
+
+.nav__list{
+    display: flex;
+    flex-direction: row;
+}
+
+.nav__list li + li{
+    margin-left: 40px;
+
+}
+.nav__link {
+    font-size: 16px;
+    color: #676770;
+    transition: all .3s;
+}
+.nav__link:hover {
+    color: #0082f3;
+}
+.nav__link:active {
+    color: #0062b6;
+    transition: all .1s;
+}
+
+
+
+/* --MAIN-- */
+.main {
+}
+
+
+/* ==WELCOME== */
+.welcome {
+    min-height: 600px;
+    height: 100vh;
+    padding: 195px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    color: #fff;
+    text-transform: uppercase;
+
+
+    background: #282936 url('img/image1.png') 30% 65% / cover no-repeat;
+}
+.welcome__heading {
+    font-size: 59px;
+    line-height: 102%;
+    letter-spacing: 0.07em;
+    margin-bottom: 110px;
+}
+.welcome__links > * + *{
+    margin-left: 20px;
+}
+.link-primary {
+    display: inline-block;
+    padding: 11px 30px;
+    font-size: 16px;
+    line-height: 131%;
+    letter-spacing: 0.12em;
+    border-radius: 4px;
+    background: #69b9ff;
+    transition: all .1s;
+}
+.link {
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 16px;
+    line-height: 131%;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    transition: all .1s;
+}
+
+.link-primary:hover {
+    background-color: #7cc2ff;
+}
+.link-primary:active {
+    background-color: #0f8fff;
+}
+
+.link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+.link:active {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-color: rgba(0, 0, 0, 0.5);
+
+}
+
+/* ==  ABOUT  (WHAT WE DO)  == */
+
+.about {
+}
+.container {
+}
+
+.about .cards-wrapper {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+.about .card {
+    padding: 35px 16px 24px;
+    width: 300px;
+    border: 1px solid #dcebf7;
+    border-radius: 5px;
+    /* color: #fff; */
+}
+
+.about .card img {
+    width: 94px;
+    height: 94px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+.about .card h4 {
+    margin-bottom: 14px;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: #676770;
+}
+
+/* ============  SERVICES  ============ */
+
+.services {
+}
+
+.services .cards-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.services .card {
+    width: 45%;
+}
+.services .card img {
+    margin-bottom: 20px;
+}
+.services .card h4 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+}
+
+.services .link{
+    margin-top: 16px;
+}
+
+.link {
+}
+
+/* ============  TABS  ============ */
+
+
+.tab-section {
+}
+.tabs {
+}
+.tabs__nav {
+    margin-bottom: 52px;
+}
+
+.tabs__nav button {
+    padding: 0px 30px;
+    font-size: 16px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 4px;
+    background: #92a0ad;
+    transition: all .5s;
+}
+
+.tabs__nav button.active {
+    background-color: #2e80b6;
+}
+
+.tabs__nav button + button {
+    margin-left: 16px;
+}
+
+.active {
+}
+.tabs__item {
+    animation: fade 1s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.3;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.tabs__item img {
+    margin-bottom: 16px;
+    /* width: 940px; */
+    /* height: 525px;  */
+    /* width: 900px; */
+    aspect-ratio: 4/3; /* Фиксируем пропорции 3:4 */
+    object-fit: cover;
+    object-position: center;
+}
+
+.tabs__item h4 {
+    margin-bottom: 16px;
+    font-size: 24px;
+    line-height: 116%;
+    color: #676770;
+}
+.tabs__item p {
+    /* margin: 0 auto; */
+    
+}
+
+.tabs__desc {
+    margin: 0 auto;
+    max-width: 709px;
+    font-size: 14px;
+    line-height: 192%;
+}
+
+
+
+/* ============  FOOTER  ============ */
+
+.footer {
+}
+.footer__container {
+    padding: 35px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+}
+.footer__container > * {
+    width: 30%;
+}
+.footer__desc h4 {
+    margin-bottom: 25px;
+    font-size: 18px;
+    line-height: 111%;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: #676770;
+}
+.footer__desc {
+}
+.footer__desc a {
+    font-size: 13px;
+    line-height: 154%;
+    color: #668cad;
+}
+.footer__desc li {
+    position: relative;
+    height: 30px;
+}
+.footer__desc li + li {
+    margin-top: 6px;
+}
+.footer__desc li::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #d5d5e0;
+}
+.footer__socials li::after {
+    width: calc(100% - 34px);
+}
+.footer__about p{
+    text-align: start;
+}
+.footer__links {
+}
+.footer__socials {
+}
+
+.footer__socials img {
+    height: 20px;
+    width: 20px;
+    object-fit: contain;
+    margin-right: 10px;
+}
+.footer__copy {
+    padding: 40px 0;
+    background-color: #383838;
+}
+.footer__copy p {
+    font-size: 15px;
+    line-height: 133%;
+    text-align: center;
+    color: #9e9e9e;
+}
+
+
+/* ============  АДАПТИВ  ============ */
+
+@media (max-width: 750px ) {
+    .about .cards-wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    } 
+}
+
+@media (max-width: 700px) {
+    .tabs__nav button{
+        display: block;
+        margin: 0 auto;
+        padding: 10px 30px;
+    }
+    .tabs__nav button + button {
+        margin-left: auto;
+        margin-top: 15px;
+    }
+    .title-wrapper {
+        margin-bottom: 40px;
+    }
+    .tabs__nav {
+    margin-bottom: 40px;
+    }
+    .services .card .link{
+        font-size: 14px;
+    }
+    .footer__container {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .footer__about {
+        flex: 1 1 100%; /* Первая колонка занимает всю ширину */
+        order: 1; /* Ставится первой */
+    }
+    
+    .footer__links,
+    .footer__socials {
+        flex: 1 1 calc(50% - 15px); /* Две колонки по 50% */
+        order: 2; /* Идут после первой */
+    }
+    .footer__copy {
+        padding: 20px 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .services .cards-wrapper {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+    .services .card {
+        width: 80%;
+    }
+    .about .card h4 {
+        font-size: 16px;
+    }
+    .services .card h4 {
+        font-size: 16px;
+    }
+    .services .card .link{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 450px) {
+    .tabs__nav button {
+        font-size: 14px;
+    }
+    .footer__container {
+        flex-direction: column;
+
+    }
+    .footer__container > * {
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    body {
+        font-size: 12px;
+    }
+    .header__nav li + li {
+        margin-left: 15px;
+    }
+    .welcome__heading {
+        font-size: 40px;
+        margin-bottom: 50px;
+    }
+    .welcome__links a{
+        display: block;
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+
+    }
+    .welcome__links > * + * {
+    margin-top: 20px;
+    }
+}
