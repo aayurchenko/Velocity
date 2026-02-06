@@ -135,7 +135,12 @@ p {
     text-transform: uppercase;
 
 
-    background: #282936 url('img/image1.png') 30% 65% / cover no-repeat;
+    /* background: #282936 url('img/image1.png') 30% 65% / cover no-repeat; */
+    background-color: #282936;
+    background-image: url('../img/image1.png');
+    background-position: 30% 65%;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .welcome__heading {
     font-size: 59px;
